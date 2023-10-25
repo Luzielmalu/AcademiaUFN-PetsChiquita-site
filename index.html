@@ -63,10 +63,11 @@
             margin: 10px;
             padding: 10px;
             padding-left: 10px;
+            
         }
         h3{
             background-color:rgb(179, 143, 212);
-            font-size: 25px;
+            font-size: 20px;
         }
         label{
             font-size: 20;
@@ -77,15 +78,15 @@
         
         <p style="font-size: 20px;">Bem-vindo(a)!</p>
         
-        <img src="imagens/logo2.png" alt="logo" style="float: right;" width="400">
+        <img src="imagens/Sem título (1).png" alt="logo" style="float: right;" width="400">
         
         <div id="blocoServicos">
         <h3>Nossos serviços:</h3>
-        <h5>Banho</h5>
-        <h5>Tosa</h5>
-        <h5>Consulta veterinaria</h5>
-        <h5>Limpeza de ouvidos</h5>
-        <h5>Corte de unhas</h5>
+        <h5>* Banho</h5>
+        <h5>* Tosa</h5>
+        <h5>* Consulta veterinaria</h5>
+        <h5>* Limpeza de ouvidos</h5>
+        <h5>* Corte de unhas</h5>
         </div>
         <div id="blocoTabela">
         <h3>Tabela de preços dos nossos serviços:</h3>
@@ -126,7 +127,7 @@
         <form>
         <div id="blocoAgendamento">
         <h3>Gostaria de agendar algum serviço?</h3>
-        <h5>Selecione o serviço</h5>
+        <h5>Selecione o serviço:</h5>
         <label for="servicos">Serviços:</label>
         <select name="Serviços:">
             <option value="selecione">--selecione--</option>
@@ -136,7 +137,7 @@
             <option value="limpeza de ouvidos">Limpeza de ouvidos</option>
             <option value="corte de unhas">Corte de unhas</option>
         </select>
-        <h5>Selecione o dia</h5>
+        <h5>Selecione o dia:</h5>
         <label for="dia">Dias disponíveis:</label>
         <select name="Dias disponiveis:">
             <option value="selecione">--selecione--</option>
@@ -159,9 +160,16 @@
             <option value="16:00">16:00</option>
             <option value="17:00">17:00</option>
         </select>
+        <h5>Informe os seus dados:</h5>
+        <label for="nome">Nome do seu Pet:</label><br>
+        <input type="text" name="search" placeholder="Digite o nome do seu pet"/><br>
+        <label for="nome">Nome do proprietário:</label><br>
+        <input type="text" name="search" placeholder="Digite o seu nome"/><br>
+        <label for="telefone">Telefone para contato:</label><br>   
+        <input type="text" name="search" placeholder="Digite o seu telefone"/><br>
+            
         <h5>Quer deixar alguma observação?</h5>
-        <label for="observacoes">Observações:</label><br>
-        <textarea name="observacoes"></textarea><br>
+        <textarea name="observacoes" placeholder="Observações:"></textarea><br>
 
         <input type="submit" value= "Agendar" onclick="alert(texto2)"></button>
         <input type="submit" value= "Cancelar" onclick="alert(texto3)"></button>
@@ -194,7 +202,7 @@
         </ul>
         </div>
         <div id="blocoCadastro">
-        <h3>Receba nossas novidades, digite seus dados:</h3>
+        <h3>Receba nossas novidades, informe os seus dados:</h3>
         <form>
             <label for="nome">Nome:</label><br>
             <input type="nome" name="Nome"><br>
