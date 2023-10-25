@@ -3,3 +3,5 @@ Aulas de HTML, CSS E JS.
 
 #Link do site:
 https://luzielmalu.github.io/AcademiaUFN-PetsChiquita-site/
+
+<img src="![imagens/SitemapPetsChiquita.png](imagens/SitemapPetsChiquita.png)" alt="Sitemap">
