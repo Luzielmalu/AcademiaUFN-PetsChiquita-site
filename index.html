@@ -258,5 +258,32 @@
         <h3>Saúde Animal: Leishmaniose, causas e sintomas.</h3>
         <a href="https://www.minhavida.com.br/saude/temas/leishmaniose">Doença Leishmaniose</a>
         </div>
-    </body>
+    <script>
+    //Lista de horários disponíveis para um determinado dia
+    const horariosDisponiveis = ['9:00', '10:00', '11:00', '14:00', '15:00', '16:00', '17:00'];
+
+    function verificarDisponibilidade(horarioEscolhido) {
+    if (horariosDisponiveis.includes(horarioEscolhido)) {
+        return true; //Horário disponível
+    }
+    return false; //Horário já reservado
+    }
+
+    function reservarHorario(horarioEscolhido) {
+    if (verificarDisponibilidade(horarioEscolhido)) {
+        //Remover o horário da lista de horários disponíveis
+        const index = horariosDisponiveis.indexOf(horarioEscolhido);
+        if (index !== -1) {
+            horariosDisponiveis.splice(index, 1);
+        }
+        return true; //Horário reservado com sucesso
+    }
+    return false; //Horário já reservado
+    }
+
+
+
+
+    </script>
+</body>
 </html>
